@@ -11,7 +11,7 @@
 - How did the internet start?
     - After losing the first satellite to reach the earth’s atmosphere to Russia. The US Government created a program named “A.R.P.A” which stand for Advanced Research Projects Agency. A.R.P.A was made responsible to make discoveries so that the US does not remain behind. It needed a way to communicate with each other, A.R.P.A.N.E.T which stands for **Advanced Research Projects Agency Network** was built in 4 different places.
         
-        ![Untitled](connections.png)
+        ![300](images/connections.png)
         
     
     - For transfer of files, require some steps. Different types of files would be transferred, would require different rules. These **rules which are set up for the successful transfer of files** is called **Protocols** [like Transfer Control Protocol[T.C.P]].
@@ -21,14 +21,14 @@
 - How does a website work?
     - When opening a website, the **client** sends a request to the **server**, the server then responds to the client.
         
-        ![Untitled](websiteworks.png)
+        ![400](images/websiteworks.png)
         
     - This sends a request and response, also requiring protocols like HyperText Transfer Protocol [H.T.T.P].
     - How is data transferred?
         - Data is transferred in small parts called **Packets.**
     - How does the client decide on a server to request to?
         
-        ![Untitled](requests.png)
+        ![500](images/requests.png)
         
         - Each client has its own **IP address** [X.X.X.X [where X → 0 - 255] ].
             
@@ -380,15 +380,15 @@ Devices used to communicate with other devices are Networking Devices.
             
         - It **controls the flow of the data** through a flow control mechanism.
         - It is a very effective protocol but has a lot of overhead due to such features. Increased overhead leads to increased costs.
-    - **User Datagram Protocol [UDP] :**
+    - **User Datagram Protocol (UDP) :**
         - It is the go-to protocol and **does not have reliable transport** as it is **very cost-effective**. Unlike TCP, which is a connection-oriented protocol, UDP is connection-less.
 - Internet Layer :
     - The network layer in the OSI model is called the Internet Layer in TCP/IP model.
     - It defines the protocols which are responsible for the logical transmission of data over the entire network.
-    - **Internet Protocol [IP] :**
+    - **Internet Protocol (IP) :**
         - It is **responsible for delivering packets from the source host to the destination host by looking at IP addresses** in the packet headers.
         Example: IPv4, IPv6.
-    - **Internet Control Message [ICMP] :**
+    - **Internet Control Message (ICMP) :**
         - It encapsulates within IP datagrams and is **responsible for providing hosts with information about network problems**.
         - It finds the hardware address of a host from an IP address.
         - Example: Reverse ARP, Proxy ARP, Gratuitous ARP & Inverse ARP.
@@ -396,51 +396,51 @@ Devices used to communicate with other devices are Networking Devices.
     - Datalink layer + Physical Layer = Network Access Layer
     - It allows the **physical transmission of data according to the hardware addressing** and the protocols present in the layer.
 
-### SMTP [Simple Mail Transfer Protocol]
+### SMTP (Simple Mail Transfer Protocol)
 
 - These protocols are important for **sending and distributing outgoing emails**.
 - The **header of the mail has the receiver email id** and delivers the mail.
 
-### PPP [Point to Point Protocol]
+### PPP (Point to Point Protocol)
 
 - It is used to create a **direct connection between two devices**.
 - It allows an exchange of information between users after authentication.
 - Eg. Bit Torrent
 
-### **FTP [File Transfer Protocol]**
+### **FTP (File Transfer Protocol)**
 
 - It is used for **transferring files from one system to the other**. This works on a client-server model.
 - When a device **requests for file transfer** from another device, a connection is set up after the authentication of the users, the file transfer takes place.
 
-### SFTP [Secure File Transfer Protocol]
+### SFTP (Secure File Transfer Protocol)
 
 - SFTP is also known as SSH FTP refers to **File Transfer Protocol (FTP) over Secure Shell (SSH)**
 - It **encrypts files** then **sends them over a secure shell data stream** and remotely connect to the user **after execution of commands** in the terminal.
 
-### HTTP [Hyper Text Transfer Protocol]
+### HTTP (Hyper Text Transfer Protocol)
 
-- It is used for **transfer hypertext over the WWW** [World Wide Web] **for information transfer**.
+- It is used for **transfer hypertext over the WWW** (World Wide Web) **for information transfer**.
 - It defines how information needs to be formatted and transmitted.
 It also defines **how the web browser would act** when a request is made to a web page.
 
-### HTTPS [Hyper-Text Transfer Protocol Secure]
+### HTTPS (Hyper-Text Transfer Protocol Secure)
 
 - HTTPS is an extension of the Hypertext Transfer Protocol (HTTP).
 - It is **used for secure communication** over a computer network **with the SSL/TLS protocol for encryption and authentication**.
 
-### TELNET [Terminal Network]
+### TELNET (Terminal Network)
 
 - TELNET is a standard TCP/IP protocol used for virtual terminal service given by ISO.
 - The computer which establishes the connection is called a remote computer and which is connecting is called the local computer. 
 TELNET operation **allows screen-share on the remote computer which can be displayed by the local computer**. This operates on the client/server model. The local computer uses the telnet client program whereas the remote computer uses the telnet server program.
 - Telnet is **not a secure communication protocol** because it does not use any security mechanism and transfers the data over the network/internet in a plain-text form including the passwords so anyone can sniff the packets to get that important information.
 
-### **POP3 [Post Office Protocol 3]**
+### **POP3 (Post Office Protocol 3)**
 
-- It has two MAA [Message Access Agents] for the client and the receiver accessing the messages from the mailbox.
+- It has two MAA (Message Access Agents) for the client and the receiver accessing the messages from the mailbox.
 - It is **used to retrieve and manage emails from the mailbox** on the receiver mail server to the receiver’s computer. This is implied between the receiver and receiver mail server.
 
-### SSH [Secure SHell]
+### SSH (Secure Shell)
 
 - It is used to access network devices and servers over the internet.
 - It **provides strong authentication and secure communications** over insecure channels by encryption of the information and once it is encrypted it is difficult to decrypt.
@@ -448,14 +448,14 @@ TELNET operation **allows screen-share on the remote computer which can be displ
 - It **protects the network from attacks** like IP spoofing, IP source routing.
 If an attacker has somehow managed to take over the network, then SSH forces to disconnect.
 
-### UDP [User Datagram Protocol]
+### UDP (User Datagram Protocol)
 
 - It is also referred to as UDP/IP and is a Transfer Layer protocol.
 - It is **high performance and less latency**, it **permits to drop packets** instead of processing the delayed packets.
 - It does **not perform any error checking** which helps save bandwidth.
 - Transmission Control Protocol (TCP) is much more costly and with over head latency.
 
-### VNC [Virtual Network Computing]
+### VNC (Virtual Network Computing)
 
 - Virtual Network Computing is a graphical desktop-sharing system that uses the Remote Frame Buffer protocol to remotely control another computer.
 - It **transmits the keyboard and mouse input from one computer to another, relaying the graphical-screen updates, over a network.**
